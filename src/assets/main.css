@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: arial;
+}
+* a {
+  text-decoration: none;
+}
+* li {
+  list-style: none;
+}
+.container {
+  min-height: 120vh;
+  padding-bottom: 50px;
+  margin: 0 auto;
+  position: relative;
+}
+.bg {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.bg::after {
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  filter: brightness(100%);
+  background-image: url("https://i.pinimg.com/originals/68/ae/bf/68aebf3739f455687a90e871bdc04a98.gif");
+  background-size: cover;
+  background-position: -125px -260px;
+}
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 85%;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  align-items: center;
+
+}
+.card {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 20px;
+}
+.card h2 {
+  color: #ff5f01;
+  position: absolute;
+  bottom: 15px;
+  left: 20px;
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+}
+.card .box1,
+.box2,
+.box3,
+.box4 {
+  width: 90%;
+  height: 220px;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  border-radius: 25px;
+  cursor: pointer;
+}
+.box1 {
+  background-image:url('images/Pc.png');
+}
+.box2 {
+  background-image:url('images/F_1.png');
+}
+.box3 {
+  background-image: url("images/S.png");
+}
+.box4 {
+  background-image: url("images/L_1.png");
+
+}
+.text {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.txt h1 {
+  font-size: 7rem;
+  text-shadow: 0 0 0.2em #87F, 0 0 0.2em #87F,0 0 0.2em #87F;
+}
+.tnx h2 i {
+  color: #fd7e13;
+}
+.card div {
+  transition: 0.5s;
+}
+.card div:hover {
+  transition: 0.3s;
+  transform: translateY(-10px);
+  box-shadow: 0 19px 38px rgb(236, 172, 255), 0 15px 12px rgba(2, 251, 255, 0.385);
+}
+
